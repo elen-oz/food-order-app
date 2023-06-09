@@ -2,9 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #8a2b06;
+  border-bottom: 2px solid #b67c01;
   padding: 1rem 0;
   margin: 1rem 0;
+
+  /* max-height: 20rem;
+  overflow: scroll; */
 }
 
 .cart-item h2 {
@@ -21,7 +24,7 @@
 
 .price {
   font-weight: bold;
-  color: #8a2b06;
+  color: #b67c01;
 }
 
 .amount {
@@ -47,8 +50,8 @@
   font: inherit;
   font-weight: bold;
   font-size: 1.25rem;
-  color: #8a2b06;
-  border: 1px solid #8a2b06;
+  color: #b67c01;
+  border: 1px solid #b67c01;
   width: 3rem;
   text-align: center;
   border-radius: 6px;
