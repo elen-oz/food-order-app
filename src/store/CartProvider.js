@@ -58,6 +58,7 @@ const cartReducer = (state, action) => {
       };
     case 'REMOVE':
       const itemToRemove = state.items.find((item) => item.id === action.payload);
+
       const updatedAmount = itemToRemove.amount === 1 ? 0 : itemToRemove.amount - 1;
       updatedItems = state.items
         .map((item) => (item.id === action.payload ? { ...item, amount: updatedAmount } : item))
