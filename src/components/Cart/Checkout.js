@@ -48,12 +48,24 @@ const Checkout = (props) => {
     // submit cart data HERE
   };
 
+  const nameControlClasses = `${classes.control} ${formInputsValidity.name ? '' : classes.invalid}`;
+
+  const streetControlClasses = `${classes.control} ${
+    formInputsValidity.street ? '' : classes.invalid
+  }`;
+
+  const postalControlClasses = `${classes.control} ${
+    formInputsValidity.postalCode ? '' : classes.invalid
+  }`;
+
+  const cityControlClasses = `${classes.control} ${formInputsValidity.city ? '' : classes.invalid}`;
+
   return (
     <form
       onSubmit={confirmHandler}
       className={classes.form}
     >
-      <div className={`${classes.control} ${formInputsValidity.name} ? '' : ${classes.invalid}`}>
+      <div className={nameControlClasses}>
         <label htmlFor='name'>Your Name</label>
         <input
           type='text'
@@ -62,7 +74,7 @@ const Checkout = (props) => {
         />
         {!formInputsValidity.name && <p>Please enter a valid name</p>}
       </div>
-      <div className={`${classes.control} ${formInputsValidity.street} ? '' : ${classes.invalid}`}>
+      <div className={streetControlClasses}>
         <label htmlFor='street'>Street</label>
         <input
           type='text'
@@ -71,9 +83,7 @@ const Checkout = (props) => {
         />
         {!formInputsValidity.street && <p>Please enter a valid street</p>}
       </div>
-      <div
-        className={`${classes.control} ${formInputsValidity.postalCode} ? '' : ${classes.invalid}`}
-      >
+      <div className={postalControlClasses}>
         <label htmlFor='postal'>Postal Code</label>
         <input
           type='text'
@@ -82,7 +92,7 @@ const Checkout = (props) => {
         />
         {!formInputsValidity.postalCode && <p>Please enter a valid postal code</p>}
       </div>
-      <div className={`${classes.control} ${formInputsValidity.city} ? '' : ${classes.invalid}`}>
+      <div className={cityControlClasses}>
         <label htmlFor='city'>City</label>
         <input
           type='text'
