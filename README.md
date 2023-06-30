@@ -2,21 +2,28 @@
 
 [Link to the project](https://food-order-app-9b4ad.web.app/)
 
-## Available Scripts
+## Description
 
-### `npm install`
+This is a food ordering application built with JavaScript, CSS, and HTML. The application allows users to browse through a menu, select their desired items, and place an order.
 
-Installing all required dependencies.
+## Features
 
-### `npm start`
+- Browse through a list of available food items
+- Add desired items to a shopping cart
+- Place an order for the selected items
 
-Runs the app in the development mode.\
-Open [localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup and Installation
 
-### `npm run build`
+To set up the project on your local machine, follow these steps:
 
-Builds the app for production to the `build` folder.\
+1. Clone the repository: `git clone https://github.com/elen-oz/food-order-app.git`
+2. Navigate into the project directory: `cd food-order-app`
+3. Install the required dependencies: `npm install`
 
-### `firebase deploy`
+## Usage
 
-Deploy on Firebase
+To run the application in development mode, use the command: npm start. This will start the application on `localhost:3000`.
+
+To build the application for production, use the command: `npm run build`. This will create a `build` folder with the production-ready application.
+
+To deploy the application on Firebase, use the command: `firebase deploy`.
